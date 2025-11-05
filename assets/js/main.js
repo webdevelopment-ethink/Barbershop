@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Animate hamburger icon
             this.classList.toggle('active');
+            
+            // Prevent body scroll on mobile when menu is open
+            document.body.classList.toggle('menu-open');
         });
     }
     
@@ -23,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 navList.classList.remove('active');
                 navToggle.setAttribute('aria-expanded', 'false');
                 navToggle.classList.remove('active');
+                document.body.classList.remove('menu-open');
             }
         });
     });
@@ -35,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             navList.classList.remove('active');
             navToggle.setAttribute('aria-expanded', 'false');
             navToggle.classList.remove('active');
+            document.body.classList.remove('menu-open');
         }
     });
     

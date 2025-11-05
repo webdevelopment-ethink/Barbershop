@@ -1046,7 +1046,7 @@ address strong {
     }
     
     .nav-toggle {
-        display: flex;
+        display: flex !important;
         align-items: center;
         justify-content: center;
         padding: 12px;
@@ -1059,6 +1059,8 @@ address strong {
         -webkit-tap-highlight-color: transparent;
         background-color: transparent;
         flex-shrink: 0;
+        border: none;
+        cursor: pointer;
     }
     
     .nav-toggle:hover {
@@ -1467,7 +1469,9 @@ address strong {
     }
     
     .nav-toggle {
+        display: flex !important;
         margin: 0;
+        margin-left: var(--spacing-xs);
         min-width: 44px;
         min-height: 44px;
         padding: 10px;

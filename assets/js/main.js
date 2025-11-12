@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Add animation classes when elements come into view
-    const animateElements = document.querySelectorAll('.service-item, .hours-item, .gallery-item, .testimonial-item, .feature-box, .drink-item');
+    const animateElements = document.querySelectorAll('.service-item, .hours-item, .gallery-item, .testimonial-item, .feature-box, .football-feature, .product-category-card');
     
     if (animateElements.length > 0) {
         const elementObserver = new IntersectionObserver((entries) => {
